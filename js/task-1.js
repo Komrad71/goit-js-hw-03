@@ -7,29 +7,16 @@
 
 'use strict';
 
+function slugify(title) {
+  return title.toLowerCase().split(" ").join("-");
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function slugify(title) {
+// let lowercaseInput = title.toLowerCase();
+// let slug = lowercaseInput.split(" ");
+// return slug.join("-");
+// }
 
 
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
